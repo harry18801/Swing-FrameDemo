@@ -45,16 +45,17 @@ public class FrameDemo {
      */
     private static void createAndShowGUI() {
         //Create and set up the window.
-        JFrame frame = new JFrame("FrameDemo");
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        JFrame myFrame = new JFrame("Frame Demo");
+        myFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        myFrame.setSize(1920,1080);
  
-        JLabel emptyLabel = new JLabel("");
-        emptyLabel.setPreferredSize(new Dimension(175, 100));
-        frame.getContentPane().add(emptyLabel, BorderLayout.CENTER);
+        JLabel Label = new JLabel("Yang 2020 ");
+        Label.setPreferredSize(new Dimension(600, 900));
+        myFrame.getContentPane().add(Label, BorderLayout.CENTER);
  
         //Display the window.
-        frame.pack();
-        frame.setVisible(true);
+        myFrame.pack();
+        myFrame.setVisible(true);
     }
  
     public static void main(String[] args) {
